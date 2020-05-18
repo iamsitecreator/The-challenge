@@ -1,0 +1,23 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+},
+  "rules": {
+    "max-len": [1, 120, 2, {"ignoreComments": true}],
+    "no-unused-vars": [2, {"localStorage": "all", "args": "after-used"}]
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"]
+}
